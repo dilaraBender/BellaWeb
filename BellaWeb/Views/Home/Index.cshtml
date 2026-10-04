@@ -1,0 +1,98 @@
+﻿@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<section class="hero">
+    <div class="container">
+        <img src="~/images/bella-logo.png"
+             alt="Bella Handmade"
+             class="hero-logo-image" />
+        <h2 class="hero-title">El emeğinin zarif hali...</h2>
+        <p class="hero-descprition">Özenle hazırlanan, size özel tasarımları keşfedin.</p>
+        <a class="hero-button" asp-controller="Products" asp-action="Index">Ürünleri Keşfet</a>
+    </div>
+</section>
+
+<section class="categories">
+    <div class="container">
+        <h2 class="section-title">Ürünlerimizi Keşfedin</h2>
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="category-card">
+                    <h3>Çantalar</h3>
+                    <p>El emeğiyle hazırlanan özgün çanta modellerimizi keşfedin.</p>
+                    <a asp-controller="Products" asp-action="Index">Keşfet</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="category-card">
+                    <h3>Örtüler</h3>
+                    <p>Zarif detaylarla hazırlanan el işi örtü modellerimizi keşfedin.</p>
+                    <a asp-controller="Products" asp-action="Index">Keşfet</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="category-card">
+                    <h3>Takımlar</h3>
+                    <p>Birbiriyle uyumlu çanta ve örtü takımlarımızı keşfedin.</p>
+                    <a asp-controller="Products" asp-action="Index">Keşfet</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="kisiye-ozel" class="custom-section">
+    <div class="container">
+        <h2>Size Özel, Sizin Seçiminizle</h2>
+        <p>
+            Beğendiğiniz modeli, seçtiğiniz renk ve detaylarla size özel hazırlıyoruz.
+            Her parça, sizin tercihleriniz doğrultusunda özenle şekilleniyor.
+        </p>
+        <p class="custom-note">
+            Siz hayal edin, Bella sizin için hazırlasın.
+        </p>
+    </div>
+</section>
+
+<section id="hakkimizda" class="about-section">
+    <div class="container">
+        <h2>Bella'nın Hikâyesi</h2>
+        <p>
+            Bella, el emeğinin zarafetini günlük hayata taşıma fikriyle doğdu.
+            Her ürün; özen, sabır ve ince detaylara verilen önemle hazırlanıyor.
+            Amacımız yalnızca bir ürün sunmak değil, size özel ve uzun süre severek
+            kullanacağınız parçalar hazırlamak.
+        </p>
+        <p class="about-note">
+            El emeği • Özenle hazırlanır • Size özel
+        </p>
+    </div>
+</section>
+
+<section id="iletisim" class="contact-section">
+    <div class="container">
+        <h2>Bizimle İletişime Geçin</h2>
+        <p>
+            Sipariş, ürün detayları ve kişiye özel tasarım talepleriniz için
+            bizimle iletişime geçebilirsiniz.
+        </p>
+        <div class="contact-buttons">
+            <a class="contact-button whatsapp-button"
+               href="https://wa.me/905424734190"
+               target="_blank">
+                WhatsApp'tan Sipariş Ver
+            </a>
+            <a class="contact-button instagram-button"
+               href="https://www.instagram.com/bellaatailer/"
+               target="_blank">
+                Instagram'dan Bize Ulaşın
+            </a>
+        </div>
+    </div>
+</section>

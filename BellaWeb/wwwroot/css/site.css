@@ -1,0 +1,430 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #F8F5F1;
+}
+.hero-logo {
+    font-size: 64px;
+    letter-spacing: 12px;
+    font-family: Georgia, serif;
+}
+.hero-title {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+.hero-description {
+    font-size: 17px;
+    color: #6F6863;
+    margin-top: 18px;
+}
+.hero-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background-color: #5C514B;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+    .hero-button:hover {
+        background-color: #786A62;
+        color: white;
+    }
+
+.categories {
+    padding: 80px 0;
+    background-color: #FFFFFF;
+}
+.section-title {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 45px;
+}
+.category-card {
+    text-align: center;
+    padding: 40px 25px;
+    background-color: #F8F5F1;
+    height: 100%;
+}
+    .category-card h3 {
+        font-family: Georgia, serif;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+    .category-card p {
+        color: #6F6863;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .category-card a {
+        color: #5C514B;
+        text-decoration: none;
+        font-weight: 500;
+        border-bottom: 1px solid #5C514B;
+        padding-bottom: 3px;
+    }
+.custom-section {
+    padding: 90px 0;
+    text-align: center;
+    background-color: #EFE8E2;
+}
+    .custom-section h2 {
+        font-family: Georgia, serif;
+        font-size: 34px;
+        font-weight: 400;
+        margin-bottom: 22px;
+    }
+    .custom-section p {
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #6F6863;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+    .custom-section .custom-note {
+        margin-top: 25px;
+        font-family: Georgia, serif;
+        font-style: italic;
+        color: #5C514B;
+    }
+.about-section {
+    padding: 90px 0;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+    .about-section h2 {
+        font-family: Georgia, serif;
+        font-size: 34px;
+        font-weight: 400;
+        margin-bottom: 25px;
+    }
+    .about-section p {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #6F6863;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+    .about-section .about-note {
+        margin-top: 25px;
+        color: #5C514B;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+.contact-section {
+    padding: 90px 0;
+    text-align: center;
+    background-color: #F8F5F1;
+}
+    .contact-section h2 {
+        font-family: Georgia, serif;
+        font-size: 34px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .contact-section p {
+        color: #6F6863;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.contact-button {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border: 1px solid #5C514B;
+    transition: 0.3s;
+}
+.whatsapp-button {
+    background-color: #5C514B;
+    color: white;
+}
+.instagram-button {
+    background-color: transparent;
+    color: #5C514B;
+}
+.contact-button:hover {
+    background-color: #786A62;
+    color: white;
+}
+.bella-navbar-logo {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    letter-spacing: 6px;
+}
+.navbar {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+    .navbar .nav-link {
+        margin-left: 18px;
+        font-size: 15px;
+        color: #5C514B !important;
+    }
+        .navbar .nav-link:hover {
+            color: #9A8173 !important;
+        }
+.hero-logo-image {
+    width: 260px;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.bella-footer {
+    background-color: #5C514B;
+    text-align: center;
+    padding: 50px 0 30px;
+    color: #F8F5F1;
+}
+
+    .bella-footer h3 {
+        font-family: Georgia, serif;
+        font-size: 22px;
+        letter-spacing: 5px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+.footer-slogan {
+    font-family: Georgia, serif;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    margin-bottom: 25px;
+}
+
+    .footer-links a {
+        color: #F8F5F1;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+.footer-copyright {
+    font-size: 13px;
+    opacity: 0.7;
+    margin-bottom: 0;
+}
+.navbar {
+    background-color: #F8F5F1 !important;
+}
+.product-categories {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 35px 0 50px;
+}
+
+.category-button {
+    padding: 10px 24px;
+    background-color: transparent;
+    border: 1px solid #5C514B;
+    color: #5C514B;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .category-button:hover {
+        background-color: #EFE8E2;
+    }
+
+    .category-button.active {
+        background-color: #5C514B;
+        color: white;
+    }
+
+.products-section {
+    padding-bottom: 80px;
+}
+
+.product-card {
+    background-color: #FFFFFF;
+    border: 1px solid #EEE8E3;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+.product-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 22px;
+}
+
+.product-category {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #9A8173;
+}
+
+.product-info h3 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 8px 0 12px;
+}
+
+.product-info p {
+    color: #6F6863;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.product-detail {
+    display: inline-block;
+    margin-top: 8px;
+    color: #5C514B;
+    text-decoration: none;
+    border-bottom: 1px solid #5C514B;
+    padding-bottom: 3px;
+}
+.product-detail-page {
+    padding: 60px 0 90px;
+}
+
+.product-gallery {
+    padding-right: 25px;
+}
+
+.detail-main-image {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+}
+
+.detail-small-images {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+    .detail-small-images img {
+        width: calc(50% - 7.5px);
+        height: 180px;
+        object-fit: cover;
+    }
+.product-detail-info {
+    padding: 30px 10px;
+}
+
+    .product-detail-info h1 {
+        font-family: Georgia, serif;
+        font-size: 34px;
+        font-weight: 400;
+        margin: 12px 0 20px;
+    }
+
+    .product-detail-info p {
+        color: #6F6863;
+        line-height: 1.8;
+        font-size: 15px;
+    }
+.product-features {
+    margin-top: 30px;
+    border-top: 1px solid #E5DDD7;
+    border-bottom: 1px solid #E5DDD7;
+    padding: 10px 0;
+}
+
+.product-feature {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+    .product-feature span {
+        color: #6F6863;
+        font-size: 14px;
+    }
+
+    .product-feature strong {
+        color: #5C514B;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+.personalization-note {
+    margin-top: 30px;
+    padding: 22px;
+    background-color: #F8F5F1;
+}
+
+    .personalization-note h3 {
+        font-family: Georgia, serif;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .personalization-note p {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+.detail-whatsapp-button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px 20px;
+    text-align: center;
+    background-color: #5C514B;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+    .detail-whatsapp-button:hover {
+        background-color: #786A62;
+        color: white;
+    }
+.category-button {
+    text-decoration: none;
+}

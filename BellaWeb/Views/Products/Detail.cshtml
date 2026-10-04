@@ -1,0 +1,98 @@
+﻿@model BellaWeb.Models.Product
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<section class="product-detail-page">
+    <div class="container">
+
+        <div class="row">
+
+            <!-- ÜRÜN FOTOĞRAFLARI -->
+            <div class="col-md-7">
+                <div class="product-gallery">
+
+                    <img src="@Model.MainImage"
+                         alt="@Model.Name"
+                         class="detail-main-image" />
+
+                    <div class="detail-small-images">
+
+                        <img src="@Model.DetailImage1"
+                             alt="@Model.Name detay görünümü" />
+
+                        <img src="@Model.DetailImage2"
+                             alt="@Model.Name detay görünümü" />
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- ÜRÜN BİLGİLERİ -->
+            <div class="col-md-5">
+
+                <div class="product-detail-info">
+
+                    <span class="product-category">
+                        @Model.Category
+                    </span>
+
+                    <h1>@Model.Name</h1>
+
+                    <p>
+                        @Model.Description
+                    </p>
+
+
+                    <!-- ÜRÜN ÖZELLİKLERİ -->
+                    <div class="product-features">
+
+                        <div class="product-feature">
+                            <span>Ölçü</span>
+                            <strong>@Model.Size</strong>
+                        </div>
+
+                        <div class="product-feature">
+                            <span>Üretim</span>
+                            <strong>El Yapımı</strong>
+                        </div>
+
+                        <div class="product-feature">
+                            <span>Kişiselleştirme</span>
+                            <strong>Mevcut</strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- KİŞİYE ÖZEL -->
+                    <div class="personalization-note">
+
+                        <h3>Size Özel Hazırlanabilir</h3>
+
+                        <p>
+                            Bu ürün, seçtiğiniz renk ve detaylara göre size özel hazırlanabilir.
+                            Seçenekler hakkında bilgi almak için bizimle iletişime geçebilirsiniz.
+                        </p>
+
+                    </div>
+
+
+                    <!-- WHATSAPP -->
+                    <a class="detail-whatsapp-button"
+                       href="https://wa.me/905424734190?text=Merhaba%2C%20Bella%20ürünü%20hakkında%20bilgi%20almak%20istiyorum."
+                       target="_blank">
+                        WhatsApp'tan Sipariş Ver
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>

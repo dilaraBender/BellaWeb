@@ -1,0 +1,83 @@
+﻿@model List<BellaWeb.Models.Product>
+@{
+    ViewData["Title"] = "Ürünler";
+}
+@{
+    var selectedCategory = Context.Request.Query["category"].ToString();
+}
+<h1>Ürünlerimiz</h1>
+
+<div class="product-categories">
+
+    <a asp-controller="Products"
+       asp-action="Index"
+       class="category-button @(string.IsNullOrEmpty(selectedCategory) ? "active" : "")">
+        Tümü
+    </a>
+
+    <a asp-controller="Products"
+       asp-action="Index"
+       asp-route-category="Çanta"
+       class="category-button @(selectedCategory == "Çanta" ? "active" : "")">
+        Çantalar
+    </a>
+
+    <a asp-controller="Products"
+       asp-action="Index"
+       asp-route-category="Örtü"
+       class="category-button @(selectedCategory == "Örtü" ? "active" : "")">
+        Örtüler
+    </a>
+
+    <a asp-controller="Products"
+       asp-action="Index"
+       asp-route-category="Takım"
+       class="category-button @(selectedCategory == "Takım" ? "active" : "")">
+        Takımlar
+    </a>
+
+</div>
+
+<section class="products-section">
+    <div class="container">
+
+        <div class="row g-4">
+
+            @foreach (var product in Model)
+            {
+                <div class="col-md-4">
+                    <div class="product-card">
+
+                        <img src="@product.MainImage"
+                             alt="@product.Name"
+                             class="product-image" />
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                @product.Category
+                            </span>
+
+                            <h3>@product.Name</h3>
+
+                            <p>
+                                @product.Description
+                            </p>
+
+                            <a asp-controller="Products"
+                               asp-action="Detail"
+                               asp-route-id="@product.Id"
+                               class="product-detail">
+                                Detayları Gör
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            }
+
+        </div>
+
+    </div>
+</section>
