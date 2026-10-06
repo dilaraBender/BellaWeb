@@ -15,8 +15,8 @@ namespace BellaWeb.Controllers
                 Description = "Beyaz tonları ve zarif dokusuyla sade şıklığı öne çıkaran, el emeğiyle özenle hazırlanmış özel tasarım çanta.",
                 Size = "17 × 12 cm",
                 MainImage = "/images/products/bag-01.jpeg",
-                DetailImage1 = "/images/products/bag-01-detail1.jpeg",
-                DetailImage2 = "/images/products/bag-01-detail2.jpeg"
+                DetailImage1 = "/images/products/bag-01-detail2.jpeg",
+                DetailImage2 = "/images/products/bag-01-detail1.jpeg"
             },
 
             new Product
@@ -27,7 +27,7 @@ namespace BellaWeb.Controllers
                 Description = "Siyah zemini ve beyaz işlemeleriyle güçlü ve zarif bir görünüm sunan, özel günlere eşlik edecek el yapımı Bella çanta.",
                 Size = "15 × 12 cm",
                 MainImage = "/images/products/bag-02.jpeg",
-                DetailImage1 = "/images/products/bag-02-detail2.jpeg",
+                DetailImage1 = "/images/products/bag-02-detail2.png",
                 DetailImage2 = "/images/products/bag-02-detail1.jpeg"
             },
 
@@ -39,7 +39,7 @@ namespace BellaWeb.Controllers
                 Description = "Lacivert işlemeleri ve yuvarlak formuyla zarif, el yapımı özel tasarım çanta.",
                 Size = "12 × 12 cm",
                 MainImage = "/images/products/bag-03.jpeg",
-                DetailImage1 = "/images/products/bag-03-detail2.jpeg",
+                DetailImage1 = "/images/products/bag-03-detail2.png",
                 DetailImage2 = "/images/products/bag-03-detail1.jpeg"
             },
 
@@ -51,7 +51,7 @@ namespace BellaWeb.Controllers
                 Description = "Sedef tonları ve ince işlemeleriyle özel günlere zarif bir dokunuş katan el yapımı çanta.",
                 Size = "20 × 12 cm",
                 MainImage = "/images/products/bag-04.jpeg",
-                DetailImage1 = "/images/products/bag-04-detail2.jpeg",
+                DetailImage1 = "/images/products/bag-04-detail02.jpeg",
                 DetailImage2 = "/images/products/bag-04-detail1.jpeg"
             },
             new Product
