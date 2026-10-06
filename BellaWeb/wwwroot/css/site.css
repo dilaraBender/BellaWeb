@@ -1,25 +1,33 @@
+
 html {
-  font-size: 14px;
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    padding-top: 78px;
 }
+
+/* =========================
+   ANA SAYFA - HERO
+========================= */
+
 .hero {
     min-height: 70vh;
     display: flex;
@@ -27,21 +35,25 @@ body {
     text-align: center;
     background-color: #F8F5F1;
 }
+
 .hero-logo {
     font-size: 64px;
     letter-spacing: 12px;
     font-family: Georgia, serif;
 }
+
 .hero-title {
     font-family: Georgia, serif;
     font-size: 32px;
     font-weight: 400;
 }
+
 .hero-description {
     font-size: 17px;
     color: #6F6863;
     margin-top: 18px;
 }
+
 .hero-button {
     display: inline-block;
     margin-top: 20px;
@@ -50,16 +62,86 @@ body {
     color: white;
     text-decoration: none;
     letter-spacing: 1px;
+    transition: background-color 0.3s ease;
 }
+
     .hero-button:hover {
         background-color: #786A62;
         color: white;
     }
 
+.hero-logo-image {
+    width: 260px;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+
+.hero-video-section {
+    width: 100%;
+    height: 460px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EEE7DF;
+}
+
+.hero-video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* MOBÝL */
+@media (max-width: 768px) {
+    .hero-video-section {
+        height: 300px;
+    }
+}
+
+
+/* =========================
+   VÝDEO ALTI KARÞILAMA
+========================= */
+
+.bella-welcome {
+    background-color: #F8F5F1;
+    text-align: center;
+    padding: 65px 20px 75px;
+}
+
+    .bella-welcome h2 {
+        font-family: Georgia, serif;
+        font-size: 36px;
+        font-weight: 400;
+        color: #5C514B;
+        margin-bottom: 20px;
+    }
+
+    .bella-welcome p {
+        font-size: 16px;
+        color: #6F6863;
+        line-height: 1.8;
+        margin-bottom: 25px;
+    }
+
+    .bella-welcome .hero-button {
+        margin-top: 10px;
+    }
+
+/* =========================
+   ÜRÜN KATEGORÝLERÝ
+========================= */
+
 .categories {
     padding: 80px 0;
     background-color: #FFFFFF;
 }
+
 .section-title {
     text-align: center;
     font-family: Georgia, serif;
@@ -67,23 +149,27 @@ body {
     font-weight: 400;
     margin-bottom: 45px;
 }
+
 .category-card {
     text-align: center;
     padding: 40px 25px;
     background-color: #F8F5F1;
     height: 100%;
 }
+
     .category-card h3 {
         font-family: Georgia, serif;
         font-size: 24px;
         font-weight: 400;
         margin-bottom: 15px;
     }
+
     .category-card p {
         color: #6F6863;
         font-size: 15px;
         margin-bottom: 20px;
     }
+
     .category-card a {
         color: #5C514B;
         text-decoration: none;
@@ -91,17 +177,24 @@ body {
         border-bottom: 1px solid #5C514B;
         padding-bottom: 3px;
     }
+
+/* =========================
+   KÝÞÝYE ÖZEL TASARIM
+========================= */
+
 .custom-section {
     padding: 90px 0;
     text-align: center;
     background-color: #EFE8E2;
 }
+
     .custom-section h2 {
         font-family: Georgia, serif;
         font-size: 34px;
         font-weight: 400;
         margin-bottom: 22px;
     }
+
     .custom-section p {
         max-width: 650px;
         margin-left: auto;
@@ -110,23 +203,31 @@ body {
         font-size: 16px;
         line-height: 1.8;
     }
+
     .custom-section .custom-note {
         margin-top: 25px;
         font-family: Georgia, serif;
         font-style: italic;
         color: #5C514B;
     }
+
+/* =========================
+   HAKKIMIZDA
+========================= */
+
 .about-section {
     padding: 90px 0;
     text-align: center;
     background-color: #FFFFFF;
 }
+
     .about-section h2 {
         font-family: Georgia, serif;
         font-size: 34px;
         font-weight: 400;
         margin-bottom: 25px;
     }
+
     .about-section p {
         max-width: 700px;
         margin-left: auto;
@@ -135,33 +236,43 @@ body {
         font-size: 16px;
         line-height: 1.8;
     }
+
     .about-section .about-note {
         margin-top: 25px;
         color: #5C514B;
         font-size: 14px;
         letter-spacing: 2px;
     }
+
+/* =========================
+   ÝLETÝÞÝM
+========================= */
+
 .contact-section {
     padding: 90px 0;
     text-align: center;
     background-color: #F8F5F1;
 }
+
     .contact-section h2 {
         font-family: Georgia, serif;
         font-size: 34px;
         font-weight: 400;
         margin-bottom: 20px;
     }
+
     .contact-section p {
         color: #6F6863;
         font-size: 16px;
         margin-bottom: 30px;
     }
+
 .contact-buttons {
     display: flex;
     justify-content: center;
     gap: 15px;
 }
+
 .contact-button {
     display: inline-block;
     padding: 12px 25px;
@@ -169,41 +280,85 @@ body {
     border: 1px solid #5C514B;
     transition: 0.3s;
 }
+
 .whatsapp-button {
     background-color: #5C514B;
     color: white;
 }
+
 .instagram-button {
     background-color: transparent;
     color: #5C514B;
 }
+
 .contact-button:hover {
     background-color: #786A62;
     color: white;
 }
+
+/* =========================
+   NAVBAR
+========================= */
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+}
+
 .bella-navbar-logo {
     font-family: Georgia, serif;
     font-size: 26px;
     letter-spacing: 6px;
 }
+
 .navbar {
+    margin: 0 !important;
     padding-top: 18px;
     padding-bottom: 18px;
+    background-color: #F8F5F1 !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
+
     .navbar .nav-link {
         margin-left: 18px;
         font-size: 15px;
         color: #5C514B !important;
     }
+
         .navbar .nav-link:hover {
             color: #9A8173 !important;
         }
-.hero-logo-image {
-    width: 260px;
-    max-width: 80%;
-    height: auto;
-    margin-bottom: 20px;
+
+/* MOBÝL NAVBAR */
+
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 74px;
+    }
+
+    .navbar {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+        .navbar .nav-link {
+            margin-left: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
 }
+
+/* =========================
+   FOOTER
+========================= */
+
 .bella-footer {
     background-color: #5C514B;
     text-align: center;
@@ -244,9 +399,11 @@ body {
     opacity: 0.7;
     margin-bottom: 0;
 }
-.navbar {
-    background-color: #F8F5F1 !important;
-}
+
+/* =========================
+   ÜRÜNLER SAYFASI
+========================= */
+
 .product-categories {
     display: flex;
     justify-content: center;
@@ -262,6 +419,7 @@ body {
     font-size: 14px;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
     .category-button:hover {
@@ -326,6 +484,11 @@ body {
     border-bottom: 1px solid #5C514B;
     padding-bottom: 3px;
 }
+
+/* =========================
+   ÜRÜN DETAY SAYFASI
+========================= */
+
 .product-detail-page {
     padding: 60px 0 90px;
 }
@@ -351,6 +514,7 @@ body {
         height: 180px;
         object-fit: cover;
     }
+
 .product-detail-info {
     padding: 30px 10px;
 }
@@ -367,6 +531,7 @@ body {
         line-height: 1.8;
         font-size: 15px;
     }
+
 .product-features {
     margin-top: 30px;
     border-top: 1px solid #E5DDD7;
@@ -408,6 +573,7 @@ body {
         margin-bottom: 0;
         font-size: 14px;
     }
+
 .detail-whatsapp-button {
     display: block;
     width: 100%;
@@ -425,6 +591,236 @@ body {
         background-color: #786A62;
         color: white;
     }
-.category-button {
-    text-decoration: none;
+
+/* =========================
+   MOBÝL UYUMLULUK
+========================= */
+
+@media (max-width: 768px) {
+
+    .bella-welcome {
+        padding: 45px 20px 55px;
+    }
+
+        .bella-welcome h2 {
+            font-size: 27px;
+        }
+
+        .bella-welcome p {
+            font-size: 14px;
+        }
+
+    .categories,
+    .custom-section,
+    .about-section,
+    .contact-section {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+        .section-title,
+        .custom-section h2,
+        .about-section h2,
+        .contact-section h2 {
+            font-size: 27px;
+        }
+
+    .category-card {
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-button {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .product-categories {
+        flex-wrap: wrap;
+    }
+
+    .product-image {
+        height: 300px;
+    }
+
+    .product-gallery {
+        padding-right: 0;
+    }
+
+    .detail-main-image {
+        height: auto;
+    }
+
+    .detail-small-images img {
+        height: 130px;
+    }
+}
+
+
+/* BELLA AÇILIR BÖLÜMLER */
+
+.bella-accordion-section {
+    padding: 60px 0 90px;
+    background-color: #F8F5F1;
+}
+
+    .bella-accordion-section .accordion {
+        max-width: 950px;
+        margin: 0 auto;
+    }
+
+    .bella-accordion-section .accordion-item {
+        border: none;
+        border-bottom: 1px solid #E5DDD7;
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+    .bella-accordion-section .accordion-button {
+        background-color: transparent;
+        color: #5C514B;
+        font-family: Georgia, serif;
+        font-size: 23px;
+        font-weight: 400;
+        padding: 25px 20px;
+        box-shadow: none;
+    }
+
+        .bella-accordion-section .accordion-button:not(.collapsed) {
+            background-color: #EFE8E2;
+            color: #5C514B;
+            box-shadow: none;
+        }
+
+        .bella-accordion-section .accordion-button:focus {
+            box-shadow: none;
+            outline: 2px solid #9A8173;
+            outline-offset: -2px;
+        }
+
+    .bella-accordion-section .accordion-body {
+        padding: 30px;
+        color: #6F6863;
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+.bella-italic {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #5C514B;
+    margin-top: 20px;
+}
+
+/* SIKÇA SORULAN SORULAR */
+
+#faqAccordion .accordion-button {
+    font-family: inherit;
+    font-size: 15px;
+    padding: 18px;
+}
+
+#faqAccordion .accordion-body {
+    padding: 15px 20px 25px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .bella-accordion-section {
+        padding: 30px 0 60px;
+    }
+
+        .bella-accordion-section .accordion-button {
+            font-size: 19px;
+            padding: 20px 12px;
+        }
+
+        .bella-accordion-section .accordion-body {
+            padding: 20px 12px;
+        }
+
+    #faqAccordion .accordion-button {
+        font-size: 14px;
+    }
+}
+
+
+.bella-about-heading {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    color: #5C514B;
+    margin-bottom: 30px;
+}
+
+#aboutPanel .accordion-body p {
+    max-width: 720px;
+    margin: 0 auto 22px;
+    line-height: 1.9;
+}
+
+/* BELLA KÝÞÝYE ÖZEL TASARIM */
+
+.bella-custom-heading {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    color: #5C514B;
+    margin-bottom: 30px;
+}
+
+#customPanel .accordion-body p {
+    max-width: 720px;
+    margin: 0 auto 22px;
+    line-height: 1.9;
+}
+
+@media (max-width: 768px) {
+    .bella-custom-heading {
+        font-size: 21px;
+    }
+}
+
+
+
+/* ÜRÜN FOTOÐRAF BÜYÜTME */
+
+.gallery-image {
+    cursor: zoom-in;
+}
+
+    .gallery-image:hover {
+        opacity: 0.92;
+    }
+
+.image-modal-content {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.modal-product-image {
+    max-width: 100%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.image-modal-close {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    z-index: 10;
+    background-color: white;
+    opacity: 1;
+    border-radius: 50%;
+    padding: 10px;
 }

@@ -2,44 +2,309 @@
     ViewData["Title"] = "Ana Sayfa";
 }
 
-<section class="hero">
+<section class="hero-video-section">
+    <video class="hero-video"
+           autoplay
+           muted
+           loop
+           playsinline
+           preload="metadata"
+           aria-label="Bella marka tanıtım videosu">
+        <source src="~/videos/bella.mp4" type="video/mp4" />
+    </video>
+</section>
+
+
+<section class="bella-welcome">
     <div class="container">
-        <img src="~/images/bella-logo.png"
-             alt="Bella Handmade"
-             class="hero-logo-image" />
-        <h2 class="hero-title">El emeğinin zarif hali...</h2>
-        <p class="hero-descprition">Özenle hazırlanan, size özel tasarımları keşfedin.</p>
-        <a class="hero-button" asp-controller="Products" asp-action="Index">Ürünleri Keşfet</a>
+        <h2>El emeğinin zarif hali...</h2>
+
+        <p>
+            Özenle hazırlanan, size özel tasarımları keşfedin.
+        </p>
+
+        <a class="hero-button"
+           asp-controller="Products"
+           asp-action="Index">
+            Ürünleri Keşfet
+        </a>
     </div>
 </section>
 
-<section class="categories">
+
+<!-- ANA SAYFA AÇILIR BÖLÜMLER -->
+
+<section class="bella-accordion-section">
     <div class="container">
-        <h2 class="section-title">Ürünlerimizi Keşfedin</h2>
 
-        <div class="row">
+        <div class="accordion" id="bellaAccordion">
 
-            <div class="col-md-4">
-                <div class="category-card">
-                    <h3>Çantalar</h3>
-                    <p>El emeğiyle hazırlanan özgün çanta modellerimizi keşfedin.</p>
-                    <a asp-controller="Products" asp-action="Index">Keşfet</a>
+
+            <!-- KİŞİYE ÖZEL -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#customPanel"
+                            aria-expanded="false"
+                            aria-controls="customPanel">
+                        Size Özel, Sizin Seçiminizle
+                    </button>
+                </h2>
+
+                <div id="customPanel"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#bellaAccordion">
+
+
+                    <div class="accordion-body text-center">
+
+                        <h3 class="bella-custom-heading">
+                            Hayalinizdeki tasarım, sizin tercihlerinizle hayat bulsun...
+                        </h3>
+
+                        <p>
+                            Bella'da her zevkin ve her tercihin kendine özgü
+                            olduğuna inanıyoruz. Bu yüzden yalnızca hazır
+                            modellerimizle sınırlı kalmıyor, sizin hayal
+                            ettiğiniz tasarımları da el emeğiyle hazırlıyoruz.
+                        </p>
+
+                        <p>
+                            Beğendiğiniz bir çantanın rengini değiştirmek,
+                            örtünüz için farklı bir işleme seçmek ya da
+                            birbiriyle uyumlu özel bir takım oluşturmak
+                            isteyebilirsiniz. Renklerden desenlere, küçük
+                            detaylardan genel tasarıma kadar tercihlerinizi
+                            bizimle paylaşabilirsiniz.
+                        </p>
+
+                        <p>
+                            İster kendiniz için özel bir parça, ister
+                            sevdiklerinize anlamlı bir hediye hazırlatmak
+                            isteyin; her siparişi sizin isteklerinizi
+                            ve zevkinizi dikkate alarak özenle şekillendiriyoruz.
+                        </p>
+
+                        <p>
+                            Çünkü bizim için en güzel tasarım,
+                            sizin hayalinizle el emeğimizin
+                            buluştuğu tasarımdır.
+                        </p>
+
+                        <p class="bella-italic">
+                            Siz hayal edin, Bella sizin için hazırlasın.
+                        </p>
+
+                    </div>
+
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="category-card">
-                    <h3>Örtüler</h3>
-                    <p>Zarif detaylarla hazırlanan el işi örtü modellerimizi keşfedin.</p>
-                    <a asp-controller="Products" asp-action="Index">Keşfet</a>
+            <!-- HAKKIMIZDA -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#aboutPanel"
+                            aria-expanded="false"
+                            aria-controls="aboutPanel">
+                        Bella'nın Hikâyesi
+                    </button>
+                </h2>
+
+                <div id="aboutPanel"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#bellaAccordion">
+
+                    <div class="accordion-body text-center">
+
+                        <h3 class="bella-about-heading">
+                            Her ilmekte emek, her detayda zarafet...
+                        </h3>
+
+                        <p>
+                            Bella, el emeğine duyulan sevgi ve özenle
+                            ortaya çıkan, her tasarımında kendine özgü
+                            bir hikâye taşıyan küçük bir hayalin yansımasıdır.
+                        </p>
+
+                        <p>
+                            Bizim için el işi, yalnızca bir ürün hazırlamak değil;
+                            sabrın, emeğin ve yaratıcılığın bir araya gelerek
+                            özel bir parçaya dönüşmesidir.
+                            Bu yüzden her çantayı, her örtüyü ve her detayı
+                            aynı özenle hazırlıyoruz.
+                        </p>
+
+                        <p>
+                            Bella'da her tasarımın kendine özgü olmasını önemsiyoruz.
+                            Hazırladığımız modellerin yanı sıra sizin seçtiğiniz
+                            renkler, desenler ve detaylarla da kişiye özel
+                            ürünler oluşturuyoruz.
+                        </p>
+
+                        <p>
+                            Amacımız yalnızca el yapımı ürünler sunmak değil;
+                            günlük hayatınıza, sevdiklerinize ve özel anlarınıza
+                            eşlik edecek, severek kullanacağınız
+                            parçalar hazırlamak.
+                        </p>
+
+                        <p class="bella-italic">
+                            Bella Handmade — El emeğinin zarif hali...
+                        </p>
+
+                    </div>
+
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="category-card">
-                    <h3>Takımlar</h3>
-                    <p>Birbiriyle uyumlu çanta ve örtü takımlarımızı keşfedin.</p>
-                    <a asp-controller="Products" asp-action="Index">Keşfet</a>
+            <!-- SIKÇA SORULAN SORULAR -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faqPanel"
+                            aria-expanded="false"
+                            aria-controls="faqPanel">
+                        Sıkça Sorulan Sorular
+                    </button>
+                </h2>
+
+                <div id="faqPanel"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#bellaAccordion">
+
+                    <div class="accordion-body">
+
+                        <div class="accordion" id="faqAccordion">
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#faq1">
+                                        Ürünler kişiye özel hazırlanabilir mi?
+                                    </button>
+                                </h3>
+                                <div id="faq1"
+                                     class="accordion-collapse collapse"
+                                     data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Evet, ürünlerimizi tercih ettiğiniz
+                                        renk ve detaylara göre hazırlayabiliyoruz.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#faq2">
+                                        Sipariş nasıl verebilirim?
+                                    </button>
+                                </h3>
+                                <div id="faq2"
+                                     class="accordion-collapse collapse"
+                                     data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        WhatsApp veya Instagram üzerinden
+                                        bizimle iletişime geçerek sipariş
+                                        oluşturabilirsiniz.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#faq3">
+                                        Hazırlık süresi ne kadar?
+                                    </button>
+                                </h3>
+                                <div id="faq3"
+                                     class="accordion-collapse collapse"
+                                     data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Hazırlık süresi ürünün modeline
+                                        ve kişiselleştirme detaylarına göre
+                                        değişebilir.Yaklaşık 1 illa 2 hafta içinde ürününüz hazır olur.Sipariş öncesinde
+                                        bizimle iletişime geçebilirsiniz.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#faq4">
+                                        Kargo gönderimi yapılıyor mu?
+                                    </button>
+                                </h3>
+                                <div id="faq4"
+                                     class="accordion-collapse collapse"
+                                     data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+Türkiyenin her yerine kargo ile gönderim yapabiliyoruz.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- İLETİŞİM -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#contactPanel"
+                            aria-expanded="false"
+                            aria-controls="contactPanel">
+                        Bizimle İletişime Geçin
+                    </button>
+                </h2>
+
+                <div id="contactPanel"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#bellaAccordion">
+
+                    <div class="accordion-body text-center">
+                        <p>
+                            Sipariş ve kişiye özel tasarım
+                            talepleriniz için bize ulaşabilirsiniz.
+                        </p>
+
+                        <div class="contact-buttons">
+                            <a class="contact-button whatsapp-button"
+                               href="https://wa.me/905362074217"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                WhatsApp
+                            </a>
+
+                            <a class="contact-button instagram-button"
+                               href="https://www.instagram.com/bellahandmade_tr/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Instagram
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -47,52 +312,57 @@
     </div>
 </section>
 
-<section id="kisiye-ozel" class="custom-section">
-    <div class="container">
-        <h2>Size Özel, Sizin Seçiminizle</h2>
-        <p>
-            Beğendiğiniz modeli, seçtiğiniz renk ve detaylarla size özel hazırlıyoruz.
-            Her parça, sizin tercihleriniz doğrultusunda özenle şekilleniyor.
-        </p>
-        <p class="custom-note">
-            Siz hayal edin, Bella sizin için hazırlasın.
-        </p>
-    </div>
-</section>
 
-<section id="hakkimizda" class="about-section">
-    <div class="container">
-        <h2>Bella'nın Hikâyesi</h2>
-        <p>
-            Bella, el emeğinin zarafetini günlük hayata taşıma fikriyle doğdu.
-            Her ürün; özen, sabır ve ince detaylara verilen önemle hazırlanıyor.
-            Amacımız yalnızca bir ürün sunmak değil, size özel ve uzun süre severek
-            kullanacağınız parçalar hazırlamak.
-        </p>
-        <p class="about-note">
-            El emeği • Özenle hazırlanır • Size özel
-        </p>
-    </div>
-</section>
 
-<section id="iletisim" class="contact-section">
-    <div class="container">
-        <h2>Bizimle İletişime Geçin</h2>
-        <p>
-            Sipariş, ürün detayları ve kişiye özel tasarım talepleriniz için
-            bizimle iletişime geçebilirsiniz.
-        </p>
-        <div class="contact-buttons">
-            <a class="contact-button whatsapp-button"
-               href="https://wa.me/905424734190"
-               target="_blank">
-                WhatsApp'tan Sipariş Ver
-            </a>
-            <a class="contact-button instagram-button"
-               href="https://www.instagram.com/bellaatailer/"
-               target="_blank">
-                Instagram'dan Bize Ulaşın
-            </a>
-        </div>
-    </div>
-</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        function openAccordionFromHash() {
+            const panelId = window.location.hash.substring(1);
+
+            if (!panelId) return;
+
+            const panel = document.getElementById(panelId);
+
+            if (!panel || !panel.classList.contains("accordion-collapse")) {
+                return;
+            }
+
+            const accordion = bootstrap.Collapse.getOrCreateInstance(
+                panel,
+                { toggle: false }
+            );
+
+            function scrollToPanel() {
+                const button = document.querySelector(
+                    '[data-bs-target="#' + panelId + '"]'
+                );
+
+                if (button) {
+                    button.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                }
+            }
+
+            if (panel.classList.contains("show")) {
+                scrollToPanel();
+            } else {
+                panel.addEventListener("shown.bs.collapse",
+                    scrollToPanel,
+                    { once: true }
+                );
+
+                accordion.show();
+            }
+        }
+
+        openAccordionFromHash();
+
+        window.addEventListener(
+            "hashchange",
+            openAccordionFromHash
+        );
+    });
+</script>

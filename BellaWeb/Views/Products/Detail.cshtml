@@ -15,15 +15,32 @@
 
                     <img src="@Model.MainImage"
                          alt="@Model.Name"
-                         class="detail-main-image" />
+                         class="detail-main-image gallery-image"
+                         data-bs-toggle="modal"
+                         data-bs-target="#imageModal"
+                         data-image="@Model.MainImage" />
 
                     <div class="detail-small-images">
 
-                        <img src="@Model.DetailImage1"
-                             alt="@Model.Name detay görünümü" />
+                        @if (!string.IsNullOrEmpty(Model.DetailImage1))
+                        {
+                            <img src="@Model.DetailImage1"
+                                 alt="@Model.Name detay görünümü"
+                                 class="gallery-image"
+                                 data-bs-toggle="modal"
+                                 data-bs-target="#imageModal"
+                                 data-image="@Model.DetailImage1" />
+                        }
 
-                        <img src="@Model.DetailImage2"
-                             alt="@Model.Name detay görünümü" />
+                        @if (!string.IsNullOrEmpty(Model.DetailImage2))
+                        {
+                            <img src="@Model.DetailImage2"
+                                 alt="@Model.Name detay görünümü"
+                                 class="gallery-image"
+                                 data-bs-toggle="modal"
+                                 data-bs-target="#imageModal"
+                                 data-image="@Model.DetailImage2" />
+                        }
 
                     </div>
 
@@ -83,7 +100,7 @@
 
                     <!-- WHATSAPP -->
                     <a class="detail-whatsapp-button"
-                       href="https://wa.me/905424734190?text=Merhaba%2C%20Bella%20ürünü%20hakkında%20bilgi%20almak%20istiyorum."
+                       href="https://wa.me/905362074217?text=Merhaba%2C%20Bella%20ürünü%20hakkında%20bilgi%20almak%20istiyorum."
                        target="_blank">
                         WhatsApp'tan Sipariş Ver
                     </a>
@@ -96,3 +113,55 @@
 
     </div>
 </section>
+
+
+<!-- FOTOĞRAF BÜYÜTME MODALI -->
+<div class="modal fade"
+     id="imageModal"
+     tabindex="-1"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content image-modal-content">
+
+            <button type="button"
+                    class="btn-close image-modal-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Kapat">
+            </button>
+
+            <div class="modal-body text-center">
+
+                <img id="modalImage"
+                     src=""
+                     alt="Büyük ürün görseli"
+                     class="modal-product-image" />
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const galleryImages = document.querySelectorAll(".gallery-image");
+        const modalImage = document.getElementById("modalImage");
+
+        galleryImages.forEach(function (image) {
+
+            image.addEventListener("click", function () {
+
+                const imageUrl = this.getAttribute("data-image");
+
+                modalImage.src = imageUrl;
+
+            });
+
+        });
+
+    });
+</script>
